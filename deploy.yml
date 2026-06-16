@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Copy JAR file
+      copy:
+        src: target/jenkins-demo-1.0-SNAPSHOT.jar
+        dest: /home/cbitexam/jenkins-demo-1.0-SNAPSHOT.jar
+        unsafe_writes: yes
